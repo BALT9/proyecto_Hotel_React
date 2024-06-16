@@ -1,0 +1,69 @@
+[
+    {   
+        "foto" : "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/39/0a/habitacion-para-2-personas.jpg",
+        "nroHabitacion": "Habitacion 1",
+        "tamano": "20m",
+        "camas" : 2,
+        "capacidad": 2,
+        "vista": "ciudad",
+        "bano": "privado"
+    },
+    {   
+        "foto" : "https://media-cdn.tripadvisor.com/media/photo-s/08/01/d3/d0/hotel-casa-de-yaro.jpg",
+        "nroHabitacion": "Habitacion 2",
+        "tamano": "40m",
+        "camas" : 4,
+        "capacidad": 8,
+        "vista": "lago",
+        "bano": "privado"
+    },
+    {   
+        "nroHabitacion": "Habitacion 3",
+        "tamano": "20m",
+        "camas" : 1,
+        "capacidad": 2,
+        "vista": "ciudad",
+        "bano": "compartido"
+    },
+    {
+        "nroHabitacion": "Habitacion 4",
+        "tamano": "10m",
+        "camas" : 1,
+        "capacidad": 1,
+        "vista": "ciudad",
+        "bano": "compartido"
+    },
+    {
+        "nroHabitacion": "Habitacion 5",
+        "tamano": "60m",
+        "camas" : 8,
+        "capacidad": 16,
+        "vista": "lago",
+        "bano": "privado"
+    },
+    {
+        "nroHabitacion": "Habitacion 6",
+        "tamano": "20m",
+        "camas" : 1,
+        "capacidad": 2,
+        "vista": "ciudad",
+        "bano": "privado"
+    },
+    {
+        "nroHabitacion": "Habitacion 7",
+        "tamano": "80m",
+        "camas" : 8,
+        "capacidad": 16,
+        "vista": "lago",
+        "bano": "compartido"
+    },
+    {
+        "nroHabitacion": "Habitacion 8",
+        "tamano": "20m",
+        "camas" : 2,
+        "capacidad": 4,
+        "vista": "pueblo",
+        "bano": "privado"
+    }
+
+]
