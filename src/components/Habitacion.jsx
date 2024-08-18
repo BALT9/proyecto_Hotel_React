@@ -1,44 +1,98 @@
-import { useEffect, useState } from 'react'
-import './Habitacion.css'
+import { useEffect, useState } from 'react';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import CssHabitacion from './Habitacion.module.css';
+import { Link, Outlet } from "react-router-dom";
+import { useParams } from 'react-router-dom';
 
-function Habitacion() {
+function Next(props) {
+  const { className, style, onClick } = props;
+  return (
+    <button
+      className={`${CssHabitacion.flechaNext} ${className}`}
+      style={{ ...style, display: "block"}}
+      onClick={onClick}
+    />
+  );
+}
 
-    const [listaHabitaciones, setListaHabitaciones] = useState([]);
+function Prev(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={`${CssHabitacion.flechaPrev} ${className}`}
+        style={{ ...style, display: "block"}}
+        onClick={onClick}
+      />
+    );
+  }
+  
+function Habitacion(props) {
+    let { nombreHotel } = useParams ();
 
-    useEffect(() => {
-        consumirDatos()
-    }, [])
-
-    function consumirDatos() {
-        fetch("./data/habitaciones.json")
-            .then(response => response.json())
-            .then(json => setListaHabitaciones(json))
-
-    }
+    const settings = {
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        nextArrow: <Next className="slick-next"/>,
+        prevArrow: <Prev className="slick-prev"/>,
+    };
     
-    function Reservar(){
+    
+    
+    function Reservar(){    
         alert("reservado");
     }
 
     return (
         <>
-            <div className="hotel">
-                <div className="habitacion">
+        {/* {JSON.stringify(props.habitaciones)} */}
+            <div className={CssHabitacion.hotel}>
+                <div className={CssHabitacion.habitacion}>
                     {
-                        listaHabitaciones.map((x, pos) => (
-                            <div key={pos} className='card'>
-                                <div className="card-item">
-                                    <img src={x.foto} alt="" />
-                                    <div className="texto">
-                                        <h1> Nro de Habitacion: {x.nroHabitacion}</h1>
-                                        <p>Tamaño {x.tamano}</p>
-                                        <p>Camas {x.camas}</p>
+                        props.habitaciones.map((x, pos) => (
+
+                            <Link to={`/${nombreHotel}/${x.slugHabitacion}`} key={pos} className={CssHabitacion.card}>
+
+                                <div className={CssHabitacion.card_item}>
+                                    <Slider {...settings}>
+                                    {
+                                        x.fotos.map((y,pos2)=>(
+                                            <img key={pos2} src={y} alt="" />
+                                        ))
+                                    }
+                                    </Slider>
+                                    
+                                    <div className={CssHabitacion.texto}>
+                                        <h1>{x.detalleHabitacion}</h1>
+                                        <p><strong>Cuenta con:</strong></p>{
+                                            x.caracteristicas.map((m,n)=>(
+                                                <ul key={n} className={CssHabitacion.lista}>
+                                                    <li>{m}</li>
+                                                </ul>
+                                            ))
+                                        }
                                     </div>
-                                    <button onClick={Reservar}>Reservar</button>
+                                    <div className={CssHabitacion.info}>
+                                        {
+                                            (x.mostrarPrecio == true) && 
+                                                <p>{x.precio}</p>
+
+ 
+                                        }
+        
+                                        <button onClick={Reservar} className={CssHabitacion.btn}><i className='bx bxl-whatsapp'> WhatsAap</i></button>
+                                    </div>
+                                    
+                                    
 
                                 </div>
 
-                            </div>
+                            </Link>
                         ))
                     }
                 </div>

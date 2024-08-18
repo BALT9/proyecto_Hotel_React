@@ -1,44 +1,36 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
+import './index.css'
 
 import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
 
-import App from './App.jsx'
-import Nav from './components/Nav.jsx';
-import Habitacion from './components/Habitacion.jsx';
-import Portada from './components/Portada.jsx';
+import Landing from './components/Landing.jsx';
+import Hotel from './components/Hotel.jsx';
 
+import Detalle from './components/Detalle.jsx';
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    // element: <Nav></Nav>,
-    children: [
-      {
-        path: "/",
-        element: <Portada></Portada>
-      },
-      {
-        path: "/Habitacion",
-        element: <Habitacion></Habitacion>,
-      },
-      {
-        path: "/app",
-        element: <App></App>,
-      },
-      {
-        path: "/app2",
-        element: <App />
-      }
-    ]
-  },
-]);
+import Galeria from './components/Galeria.jsx';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <RouterProvider router={router}>
-    
-  </RouterProvider>,
-)
+  const router = createBrowserRouter([
+    {
+      path:'/',
+      element: <Landing />
+    },
+    {
+      path:':nombreHotel',
+      element:  <Hotel />,
+    },
+    {
+      path: ':nombreHotel/:habitacion',
+      element: <Detalle />,
+    }
+  ]);
+
+  ReactDOM.createRoot(document.getElementById('root')).render(
+    <RouterProvider router={router}>
+      
+    </RouterProvider>,
+  )

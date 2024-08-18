@@ -1,0 +1,212 @@
+[
+    {
+        "id": 1,
+        "slug": "hotel-dia",
+        "nombre": "departamentos a su altura en la paz",
+        "colores": ["#1D1D1D","#FFC433"],
+        "descripcion": "Sea bienvenido al hotel hola",
+        "logo": "https://www.zarla.com/images/zarla-el-templo-1x1-2400x2400-20220106-683wpmjpp4b79j33vdp3.png?crop=1:1,smart&width=250&dpr=2",
+        "portadas": ["https://i.pinimg.com/originals/a1/f7/6b/a1f76b468514db14bed76848de9be78b.jpg",
+                     "https://cf.bstatic.com/xdata/images/hotel/max1024x768/443409954.jpg?k=0676100494f1acdf53d04cd9ec6e8bde7d46d482776a347bce8ce8a0af2586bb&o=&hp=1",
+                     "https://c8.alamy.com/comp/2HPMBM0/valencia-spain-february-22-2022-ac-hotels-by-marriott-is-a-spanish-hotel-chain-that-belongs-to-the-us-based-marriott-international-hotel-group-2HPMBM0.jpg"],
+        "habitaciones": [
+            {
+                "slugHabitacion": "habitacion-pequena",
+                "fotos": [
+                    "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/39/0a/habitacion-para-2-personas.jpg",
+                    "https://www.jotajotape.com/wp-content/uploads/2019/06/habitacion-juvenil-cama-complementos-flat-colgados-500x403.webp"
+                ],
+                "nroHabitacion": "Habitacion simple",
+                "detalleHabitacion": "Habitacion simple con baño privado",
+                "precio": "200bs",
+                "tamano": "20m",
+                "camas": 2,
+                "capacidad": 2,
+                "caracteristicas": ["2 escritorios","1 mesa", "2 armarios", "2 veladores","balcon con muebles de terraza"]
+            },
+            {
+                "slugHabitacion": "habitacion-pequena2",
+                "fotos": ["https://i.pinimg.com/originals/2b/cd/b2/2bcdb206a4eaff2a759536b40148fdbf.jpg",
+                          "https://www.viacelere.com/wp-content/uploads/old-blog/2022/03/decoracion-juvenil-de-habitaciones.jpg"],
+                "nroHabitacion": "Habitacion 002",
+                "detalleHabitacion": "doble con baño privado",
+                "precio": "200bs",
+                "tamano": "20m",
+                "camas": 1,
+                "capacidad": 2,
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+            },
+            {
+                "slugHabitacion": "habitacion-pequena3",
+                "fotos": ["https://colineal.com/cdn/shop/articles/estilos-decoracion-habitaciones-principales.jpg?v=1620156517&width=2048",
+                            "https://www.viacelere.com/wp-content/uploads/old-blog/2022/03/decoracion-juvenil-de-habitaciones.jpg"],
+                "nroHabitacion": "Habitacion 003",
+                "detalleHabitacion": "simple con baño compartido",
+                "precio": "200bs",
+                "tamano": "10m",
+                "camas": 1,
+                "capacidad": 1,
+                "caracteristicas": ["1 escritorio","1 mesa", "armario", "velador","balcon con muebles de terraza"]
+            },
+            {
+                "slugHabitacion": "habitacion-pequena4",
+                "fotos": ["https://i.pinimg.com/originals/2b/cd/b2/2bcdb206a4eaff2a759536b40148fdbf.jpg",
+                            "https://www.viacelere.com/wp-content/uploads/old-blog/2022/03/decoracion-juvenil-de-habitaciones.jpg"],
+                "nroHabitacion": "Habitacion 002",
+                "detalleHabitacion": "doble con baño privado",
+                "precio": "200bs",
+                "tamano": "20m",
+                "camas": 1,
+                "capacidad": 2,
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+            },
+            {
+                "slugHabitacion": "habitacion-pequena5",
+                "fotos": ["https://i.pinimg.com/originals/2b/cd/b2/2bcdb206a4eaff2a759536b40148fdbf.jpg",
+                            "https://www.viacelere.com/wp-content/uploads/old-blog/2022/03/decoracion-juvenil-de-habitaciones.jpg"],
+                "nroHabitacion": "Habitacion 002",
+                "detalleHabitacion": "doble con baño privado",
+                "precio": "200bs",
+                "tamano": "20m",
+                "camas": 1,
+                "capacidad": 2,
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+            }
+
+        ],
+        "servicios": [
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=6NTuPlcFEGmo&format=png&color=000000",
+                "desc": "desayuno"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=ymRbygTm3M1l&format=png&color=000000",
+                "desc": "calefaccion"   
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=60027&format=png&color=000000",
+                "desc": "internet"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=57447&format=png&color=109000",
+                "desc": "vista panoramica"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=10529&format=png&color=000000",
+                "desc": "habitaciones"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=LwDFxeTM77mg&format=png&color=000000",
+                "desc": "servicio mucama"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=102676&format=png&color=000000",
+                "desc": "parque"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=19872&format=png&color=000000",
+                "desc": "Piscina"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=9773&format=png&color=000000",
+                "desc":"gimnasio"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=rDmP3U8goDH2&format=png&color=000000",
+                "desc":"bar"
+            }
+        ]
+    },
+
+
+
+
+
+
+    {
+        "id": 2,
+        "slug": "hotel-noche",
+        "nombre": "Hotel Luna Bella",
+        "colores": ["#2453da","#FF5733"],
+        "portadas": ["https://contenthotels.amimir.com/hotels/es/comunidad_valenciana_r_10/elda_c_100/h_3469/imatges/4f344ac4_z.jpg",
+                     "https://res.cloudinary.com/lastminute/image/upload/w_340,h_260,c_lfill,q_auto,f_auto,g_auto/r24lglxelu0chypfew9s.jpg"],
+        "descripcion": "Elegante y sofisticado, Hotel Luna Bella en La paz BOLIVIA ofrece habitaciones lujosas, un spa exclusivo y un restaurante gourmet. Perfecto para escapadas y viajes de negocios.",
+        "logo": "https://amrinstrumentos.com/wp-content/uploads/2017/07/logo-hotel-presidente-01.png",
+        "habitaciones": [
+            {
+                "slugHabitacion": "habitacion-grande",
+                "fotos": ["https://www.casanotario.com/Galeria/ShowPhoto/8746.jpg",
+                            "https://content.arquitecturaydiseno.es/medio/2024/01/09/dsc-6279_00000000_5a699724_240109125620_1280x794.jpg"],
+                "nroHabitacion": "Habitacion 1001",
+                "detalleHabitacion": "Habitación Individual Estándar",
+                "tamano": "20m",
+                "camas": 2,
+                "capacidad": 2,
+                "caracteristicas": ["2 escritorios","1 mesa", "2 armarios", "2 veladores","balcon con muebles de terraza"]
+            },
+            {
+                "slugHabitacion": "habitacion-grande-madre",
+                "fotos": ["https://www.casanotario.com/Galeria/ShowPhoto/1551.jpg",
+                            "https://content.arquitecturaydiseno.es/medio/2024/01/09/dsc-6279_00000000_5a699724_240109125620_1280x794.jpg"],
+                "nroHabitacion": "Habitacion 1002",
+                "detalleHabitacion": "Casa de huéspedes entero en La Paz, Bolivia",
+                "precio": "200bs",
+                "mostrarPrecio": false,
+                "tamano": "20m",
+                "camas": 1,
+                "capacidad": 2,
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+            },
+            {
+                "slugHabitacion": "habitacion-preciosa-corazon-de-condesa",
+                "fotos": ["https://www.lacasagrande.net/wp-content/uploads/2017/02/palomar_MG_7582-768x576.jpg",
+                            "https://content.arquitecturaydiseno.es/medio/2024/01/09/dsc-6279_00000000_5a699724_240109125620_1280x794.jpg"],
+                "nroHabitacion": "Habitacion 1003",
+                "detalleHabitacion": "Habitación preciosa en el corazón de Condesa",
+                "tamano": "10m",
+                "camas": 1,
+                "capacidad": 1,
+                "caracteristicas": ["1 escritorio","1 mesa", "armario","velador","balcon con muebles de terraza"]
+            }
+        ],
+        "servicios": [
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=6NTuPlcFEGmo&format=png&color=000000",
+                "desc": "desayuno"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=ymRbygTm3M1l&format=png&color=000000",
+                "desc": "calefaccion"   
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=60027&format=png&color=000000",
+                "desc": "internet"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=57447&format=png&color=000000",
+                "desc": "vista panoramica"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=10529&format=png&color=000000",
+                "desc": "habitaciones"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=LwDFxeTM77mg&format=png&color=000000",
+                "desc": "servicio mucama"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=102676&format=png&color=000000",
+                "desc": "parque"
+            },
+            
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=9773&format=png&color=000000",
+                "desc":"gimnasio"
+            },
+            {
+                "servicio": "https://img.icons8.com/?size=100&id=rDmP3U8goDH2&format=png&color=000000",
+                "desc":"bar"
+            }
+        ]
+    }
+]

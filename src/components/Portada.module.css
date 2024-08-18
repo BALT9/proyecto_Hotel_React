@@ -1,0 +1,69 @@
+.portada{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.portada img{
+    width: 100%;
+    height: 550px;
+    object-fit: fill;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+.textos{
+    font-family: var(--font--);
+    color: #fff;
+    text-align: center;
+}
+.textos h1{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5rem;
+    z-index: 1;
+}
+.textos p{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    z-index: 1;
+}
+
+@media screen and (max-width:995px){
+    .textos h1{
+        font-size: 4em;
+    }
+    .textos p{
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:770px){
+    .textos h1{
+        font-size: 4em;
+    }
+    .textos p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:600px){
+    .textos h1{
+        font-size: 3em;
+    }
+    .textos p{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width:400px){
+    .textos h1{
+        font-size: 3em;
+    }
+    .textos p{
+        font-size: 1em;
+    }
+}
+
+

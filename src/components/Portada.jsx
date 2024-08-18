@@ -1,16 +1,43 @@
-import './Portada.css'
-function Portada(){
+import Nav from './Nav';
+import Habitacion from './Habitacion'
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import cssPortada from './Portada.module.css';
+
+
+function Portada(props){
+
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        pauseOnHover: false,
+    };
+
     return(
-        <>
-            <header>
-                <div className="portada">
-                    <div className="textos">
-                        <h1>Habitaciones</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut optio praesentium quod nam repellendus ullam!</p>
-                    </div>
+        <>  
+                <div className={cssPortada.portada} >
+                    <Slider {...settings}>
+                        {
+                            props.fondo.map((x, pos) => (
+                                <div key={pos}>
+                                  <img src={x} alt="" />
+                                </div>
+                              ))
+                        }
+                    </Slider>
+                        <div className={cssPortada.textos}>
+                            <h1>{props.nombre_hotel}</h1>
+                            <p>{props.descripcion}</p>
+                        </div>
                     
                 </div>
-            </header>
+            
+            
         </>
     )
 }

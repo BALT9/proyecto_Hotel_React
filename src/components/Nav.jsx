@@ -1,21 +1,48 @@
 import { Link, Outlet } from "react-router-dom";
-import './Nav.css'
+import nav from './Nav.module.css';
+import { useState } from "react";
 
-function Nav(){
-    return(
+function Nav(props) {
+
+    // const [logo,setLogo] = useState([]);
+
+    // useEffect(() => {
+    //     consumirDatos()
+    // }, [])
+
+    // function consumirDatos() {
+    //     fetch("./data/habitaciones.json")
+    //     .then(response => response.json())
+    //     .then(json => setLogo(json))
+
+    // }
+
+    const [clase,setClase] = useState('uno');
+    
+    function menuIcono(){
+        setClase(clase === 'uno' ? 'dos' : 'uno');
+    };
+
+    return (
         <>
-            <div className="nav-bar">
-                <div className="img">
-                    <img src="https://www.zarla.com/images/zarla-el-templo-1x1-2400x2400-20220106-683wpmjpp4b79j33vdp3.png?crop=1:1,smart&width=250&dpr=2" alt="" />
+
+            <div className={nav.nav_bar}>
+                <div className={nav.icono} id="icono" onClick={menuIcono}>
+                    <span>&#9776;</span>
                 </div>
-                <div className="links">
-                    <Link to={"/"} className="link">Inicio</Link>
-                    <Link to={"/Habitacion"} className="link">Habitaciones</Link>
-                    <Link to={"/app"} className="link">App</Link>
-                    <Outlet></Outlet>
+                <div className={nav.img}>
+                    <img src={props.logo} alt="" />
+                </div>
+
+                <div className={`${nav.links} ${nav[clase]}`} id="links">
+                    <Link to={"/"} className={nav.link} onClick={menuIcono}>Inicio</Link>
+                    <Link to={"/Habitacion"} className={nav.link} onClick={menuIcono}>Habitaciones</Link>
+                    <Link to={"/app"} className={nav.link} onClick={menuIcono}>Servicios</Link>
+                    <button className={nav.botonReserva}>Reservar Ahora</button>
                 </div>
             </div>
-            
+                    <Outlet></Outlet>
+
         </>
     )
 }

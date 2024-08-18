@@ -6,7 +6,8 @@
         "camas" : 2,
         "capacidad": 2,
         "vista": "ciudad",
-        "bano": "privado"
+        "bano": "privado",
+        "logo": "https://amrinstrumentos.com/wp-content/uploads/2017/07/logo-hotel-presidente-01.png"
     },
     {   
         "foto" : "https://media-cdn.tripadvisor.com/media/photo-s/08/01/d3/d0/hotel-casa-de-yaro.jpg",
@@ -18,6 +19,7 @@
         "bano": "privado"
     },
     {   
+        "foto": "https://i.pinimg.com/originals/2b/cd/b2/2bcdb206a4eaff2a759536b40148fdbf.jpg",
         "nroHabitacion": "Habitacion 3",
         "tamano": "20m",
         "camas" : 1,
