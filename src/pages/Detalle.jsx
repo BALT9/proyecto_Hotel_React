@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import Galeria from "./Galeria";
+import Galeria from "../components/detalles/Galeria";
 
 import './detalle.css'
 
@@ -59,7 +59,7 @@ function Detalle(){
         <>
             {dataHotel &&
                 <>
-                    <Galeria colores={dataHotel.colores} habitacion={dataHabitacion}></Galeria>
+                    <Galeria colores={dataHotel.colores} habitacion={dataHabitacion}></Galeria> 
                 </>
             }
         </>

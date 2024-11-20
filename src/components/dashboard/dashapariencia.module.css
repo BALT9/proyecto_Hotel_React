@@ -1,0 +1,160 @@
+.container{
+    display: flex;
+    margin: 0;
+}
+.container .container_apa{
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.container .container_apa form{
+    width: 60%;
+}
+.titulo{
+    text-align: center;
+    font-family: var(--font--);
+    color: var(--landing-secondary-color);
+    font-size: 30px;
+    margin: 0;
+    padding: 20px;
+    margin-top: 30px;
+}
+.group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.group .cont_portada{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.pedirLogo{
+    display: none;
+}
+.botonSubir{
+    margin: 10px 0;
+    background-color: var(--landing-secondary-color);
+    border: none;
+    color: #fff;
+    padding: 10px;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: var(--font--);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonSubir i{
+    font-size: 30px;
+}
+.portadas{
+    border: 1px solid var(--landing-secondary-color);
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    height: 200px;
+}
+.portadas img{
+    width: 100%;
+    height: 100%;
+}
+.colores{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+}
+.label {
+    font-family: var(--font--);
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0;
+}
+.item_color{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item_color .color{
+    border: none;
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+}
+.color::-webkit-color-swatch{
+    border-radius: 15px;
+}
+
+
+.boton{
+    background-color: var(--landing-secondary-color);
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    color: #fff;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+
+}
+.boton:hover{
+    background-color: purple;
+}
+
+.error{
+    color: red;
+    font-size: 13px;
+    font-family: var(--font--);
+    font-weight: 400;
+  }
+
+@media screen and (max-width:995px){
+
+}
+@media screen and (max-width:750px){
+  
+}
+@media screen and (max-width:600px){
+    .titulo{
+        font-size: 25px;
+        /* margin: 10px; */
+    }
+    .botonSubir{
+        width: 60%;
+        cursor: pointer;
+        height: 40px;
+    }
+    .container .container_apa form{
+        width: 80%;
+    }
+    .group .cont_portada{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }
+    .portadas{
+        width: 100%;
+        height: 180px;
+    }
+    
+
+}
+@media screen and (max-width:400px){
+    .titulo{
+        font-size: 20px;
+        /* margin: 10px; */
+    }
+    .container h2{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+    }
+}

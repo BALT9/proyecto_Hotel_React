@@ -31,6 +31,7 @@ function Prev(props) {
 function Habitacion(props) {
     let { nombreHotel } = useParams ();
 
+
     const settings = {
         dots: false,
         arrows: true,
@@ -51,12 +52,14 @@ function Habitacion(props) {
     return (
         <>
         {/* {JSON.stringify(props.habitaciones)} */}
+        <h1 className={CssHabitacion.title}>Habitaciones</h1>
             <div className={CssHabitacion.hotel}>
                 <div className={CssHabitacion.habitacion}>
                     {
                         props.habitaciones.map((x, pos) => (
 
-                            <Link to={`/${nombreHotel}/${x.slugHabitacion}`} key={pos} className={CssHabitacion.card}>
+                            <Link to={`/${nombreHotel}/${x.slugHabitacion}`}  key={pos} className={CssHabitacion.card}>
+                                {/* onClick={handleClick(`/${nombreHotel}/${x.slugHabitacion}`)} */}
 
                                 <div className={CssHabitacion.card_item}>
                                     <Slider {...settings}>
@@ -86,6 +89,7 @@ function Habitacion(props) {
                                         }
         
                                         <button onClick={Reservar} className={CssHabitacion.btn}><i className='bx bxl-whatsapp'> WhatsAap</i></button>
+                                        <button className={CssHabitacion.btn}>whatsapp</button>
                                     </div>
                                     
                                     

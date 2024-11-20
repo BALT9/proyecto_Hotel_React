@@ -1,0 +1,22 @@
+{
+    "nombre":"nombre-empresa",
+    "redes:" : [
+        {
+            "nombre-red": "facebook",
+            "link":"abc",
+            "icono":"imagen"
+        },
+        {
+            "nombre-red": "whastapp",
+            "link":"abc",
+            "icono":"imagen"
+        },
+        {
+            "nombre-red": "x",
+            "link":"abc",
+            "icono":"imagen"
+        }
+    ],
+    "contactos": ["+591 7654321"]
+
+}

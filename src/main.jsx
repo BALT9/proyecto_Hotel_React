@@ -7,17 +7,33 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Landing from './components/Landing.jsx';
-import Hotel from './components/Hotel.jsx';
+import Landing from './pages/Landing.jsx';
+import Hotel from './pages/Hotel.jsx';
 
-import Detalle from './components/Detalle.jsx';
+import Detalle from './pages/Detalle.jsx';
 
-import Galeria from './components/Galeria.jsx';
+import Formulario1 from './components/forms/Formulario1.jsx';
+import Formulario2 from './components/forms/Formulario2.jsx';
+
+import Dashboard from './components/Dashboard.jsx';
+import Steper from './components/Steper.jsx';
 
   const router = createBrowserRouter([
     {
       path:'/',
       element: <Landing />
+    },
+    {
+      path:'/registrarse',
+      element: <Steper></Steper>
+    },
+    {
+      path:'/login',
+      element: <Formulario2 />
+    },
+    {
+      path:'/miNegocio',
+      element: <Dashboard></Dashboard>
     },
     {
       path:':nombreHotel',
@@ -26,7 +42,11 @@ import Galeria from './components/Galeria.jsx';
     {
       path: ':nombreHotel/:habitacion',
       element: <Detalle />,
-    }
+    },
+    {
+      path:'/probarAhora',
+      element:  <Steper></Steper>,
+    },
   ]);
 
   ReactDOM.createRoot(document.getElementById('root')).render(

@@ -1,0 +1,214 @@
+.cont{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container{
+    width: 60%;
+    padding: 30px;
+}
+.container img{
+    /* display: flex; */
+    
+    height: 450px;
+    object-fit: cover;
+}
+.textos{
+    /* border: 1px solid black; */
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    padding: 0 30px;
+    margin: 0 40px;
+    font-family: var(--font--);
+    border-radius: 5px;
+    position: relative;
+    width: 40%;
+    
+}
+.textos h2{
+    color: var(--primary-color);
+    font-size: 20px;
+}
+.textos ul{
+    color: #222222;
+    font-size: 15px;
+}
+.textos button{
+    position: absolute;
+    top: 75%;
+    background-color: var(--segundo-color);
+    padding: 10px;
+    width: 80%;
+    border: none;
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.containerServ{
+    font-family: var(--font--);
+    margin: 20px;
+    border: 1px solid rgb(221, 221, 221);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 6px 16px;
+    width: 60%;
+    padding: 5px 10px;
+}
+.servicios{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 10px 20px;
+}
+.servicios p{
+    font-size: 15px;
+    margin: 10px;
+}
+
+@media screen and (max-width:995px) {
+    .container{
+        width: 50%;
+        padding: 10px;
+    }
+    .textos{
+        width: 30%;   
+    }
+    .containerServ{
+        width: 60%;
+        padding: 5px 10px;
+    }
+    .containerServ{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:770px) {
+    .container{
+        width: 60%;
+        padding: 10px;
+    }
+    .container img{
+        height: 350px;
+    }
+    .textos{
+        width: 40%;  
+        font-size: 10px; 
+        
+    }
+    .textos h2{
+        font-size: 13px;
+    }
+    .textos ul{
+        font-size: 13px;
+    }
+    .textos button{
+        top: 75%;
+        padding: 5px;
+        width: 80%;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px){
+    .cont{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5px;
+    }
+    .container{
+        width: 95%;
+        padding: 5px;
+    }
+    .container img{
+        height: 330px;
+    }
+    .textos{
+        width: 80%;  
+        font-size: 10px; 
+        padding-bottom: 50px;
+    }
+    .textos h2{
+        font-size: 13px;
+    }
+    .textos ul{
+        font-size: 10px;
+    }
+    .textos button{
+        margin: 25px 0;
+        /* display: none; */
+        top: 70%;
+        padding: 5px;
+        width: 90%;
+        font-size: 15px;
+    }
+    .containerServ{
+        margin: 5px;
+        width: 90%;
+        padding: 0px 5px;
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 10px 20px;
+    }
+    .containerServ h2{
+        font-size: 15px;
+    }
+    .servicios p{
+        font-size: 10px;
+        margin: 5px;
+    }
+}
+@media screen and (max-width:400px){
+    .cont{
+        margin-top: 0px;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    .container img{
+        height: 330px;
+    }
+    .textos{
+        width: 80%;  
+        font-size: 10px; 
+        padding-bottom: 50px;
+    }
+    .textos h2{
+        font-size: 13px;
+    }
+    .textos ul{
+        font-size: 10px;
+    }
+    .textos button{
+        margin: 25px 0;
+        /* display: none; */
+        top: 70%;
+        padding: 5px;
+        width: 90%;
+        font-size: 15px;
+    }
+    .containerServ{
+        margin: 5px;
+        width: 90%;
+        padding: 0px 5px;
+    }
+    .servicios{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+        justify-content: center;
+        margin: 10px 20px;
+    }
+    .containerServ h2{
+        font-size: 15px;
+    }
+    .servicios p{
+        font-size: 10px;
+        margin: 5px;
+    }
+}

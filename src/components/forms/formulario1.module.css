@@ -1,0 +1,185 @@
+/* Estilos generales */
+.container {
+    font-family: var(--font--);
+    background-color: #f7f7f7;
+    /* opacity: 0.8; */
+    background-image: radial-gradient(var(--landing-secondary-color) 0.35000000000000003px, #fff 0.35000000000000003px);
+    background-size: 7px 7px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* height: 60vh; */
+    margin: 0;
+  }
+  
+  .title {
+    text-align: center;
+    color: var(--landing-secondary-color);
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-family: var(--font--);
+  }
+  
+  /* Estilos del formulario */
+  .form {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+  
+  .formGroup {
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para las etiquetas */
+  .label {
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  /* Estilo para los inputs */
+  .input,
+  .select {
+    width: 95%;
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  .input:focus,
+  .select:focus {
+    border-color: var(--landing-secondary-color);
+  }
+  
+  /* Estilo para el select (país) */
+  .select {
+    width: 95%;
+    background-color: white;
+    color: #333;
+  }
+  
+  /* Estilo del número de WhatsApp */
+  .whatsappContainer {
+    display: flex;
+    align-items: center;
+  }
+  
+  .code {
+    display: inline-block;
+    width: 50px;
+    text-align: center;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .whatsappInput {
+    width: calc(100% - 50px);
+    border-radius: 0 5px 5px 0;
+    border-left: none;
+
+  }
+  
+  /* Estilos para el checkbox */
+  .checkbox {
+    margin-right: 10px;
+  }
+  
+  .checkboxLabel {
+    display: inline-block;
+    width: auto;
+  }
+  
+  /* Botón de enviar */
+  .button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: var(--landing-secondary-color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #e04343;
+  }
+  /* Estilos para mensajes o detalles extra */
+  .small {
+    display: block;
+    text-align: center;
+    color: #777;
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .error{
+    color: var(--landing-secondary-color);
+    font-size: 13px;
+    font-family: var(--font--);
+  }
+
+  
+@media screen and (max-width:995px){
+
+}
+@media screen and (max-width:750px){
+  
+}
+@media screen and (max-width:600px){
+  .container {
+    font-family: var(--font--);
+    background-color: #fff;
+    opacity: none;
+    background-image: none;
+    background-size: none;
+    height: 60vh;
+    margin: 0;
+  }
+    
+  .title{
+    font-size: 20px;
+    margin: 10px;
+  }
+  .form{
+        width: 80%;
+        box-shadow: none;
+  }
+  /* Estilo para los inputs */
+  .input,
+  .select {
+    width: 90%;
+  }
+  .button{
+
+  }
+  /* Estilo para el select (país) */
+  .select {
+    width: 100%;
+
+  }
+    
+
+}
+@media screen and (max-width:400px){
+    .titulo{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .container h2{
+        font-size: 15px;
+    }
+}
+  

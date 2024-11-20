@@ -1,0 +1,245 @@
+.container{
+    top: 0;
+    position: absolute;
+    background-color: #111111a4;
+    width: 100%;
+    height: 100vh;
+}
+.botonAnadir{
+    padding: 10px 30px;
+    border: none;
+    background-color: var(--landing-secondary-color);
+    font-family: var(--font--);
+    color: white;
+    margin: 20px 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.uno{
+    display: none;
+}
+.dos{
+    display: block;
+}
+.container_modal{
+    overflow-y: scroll; 
+    position: relative;
+    background-color: white;
+    margin: 25px;
+    height: 95vh;
+    border-radius: 6px;
+}
+.container_modal .x{
+    position: absolute;
+    right: 1%;
+    top: 1%;
+    font-size: 35px;
+    cursor: pointer;
+}
+.container_modal .x:hover{
+    background-color: var(--landing-secondary-color);
+    color: #fff;
+    border-radius: 50%;
+}
+
+.container_modal form{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1px;
+}
+.cont1{
+    width: 50%;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+.label {
+    font-family: var(--font--);
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+    margin: 5px 0;
+}
+.inputText,
+  .select {
+    padding: 15px;
+    font-size: 14px;
+    border: 1px solid #959393;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin: 5px 0;
+}
+  
+  .inputText:focus,
+  .select:focus {
+    border: 1.5px solid var(--landing-secondary-color);
+  }
+  .cont1 textarea{
+    resize: none;
+  }
+
+.minContainer{
+    display: flex;
+    justify-content: space-evenly;
+}
+.minContainer1{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.group{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.group .cont_portada{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+}
+.pedirLogo{
+    display: none;
+}
+.botonSubir{
+    position: relative;
+    margin: 5px 0;
+    background-color: var(--landing-secondary-color);
+    border: none;
+    color: #fff;
+    padding: 8px;
+    width: 30%;
+    cursor: pointer;
+    border-radius: 2px;
+    font-family: var(--font--);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.botonSubir i{
+    font-size: 30px;
+}
+.portadas{
+    border: 1px solid var(--landing-secondary-color);
+    height: auto;
+    border-radius: 5px;
+    width: 100%;
+    height: 100px;
+}
+.portadas img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.error{
+    color: red;
+    font-size: 13px;
+    font-family: var(--font--);
+    font-weight: 400;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+}
+.boton button{
+    margin: 5px 0;
+    background-color: var(--landing-secondary-color);
+    border: none;
+    color: #fff;
+    padding: 8px;
+    width: 50%;
+    cursor: pointer;
+    border-radius: 6px;
+    font-family: var(--font--);
+    padding: 20px;
+}
+
+
+.container_card{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    
+}
+.card{
+    width: 90%;
+    height: 70px;
+    /* background-color: #333; */
+    color: #000;
+    
+    border: 1px solid #403f3f7c;
+    background-color: #f8f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 0 15px;
+}
+.card h2{
+    font-weight: 400;
+    font-size: 20px;
+}
+.card button{
+    padding: 15px;
+    border: none;
+    margin: 0 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+.botonRed{
+    background-color: red;
+}
+.botonGreen{
+    background-color: green;
+}
+
+
+
+
+
+
+@media screen and (max-width:995px){
+
+}
+@media screen and (max-width:750px){
+  
+}
+@media screen and (max-width:600px){
+    .container_modal{
+        margin: 10px;
+
+    }
+    .container_modal form{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        gap: 1px;
+    }
+    .cont1{
+        width: 90%;
+        margin: 20px;
+    }
+
+    .minContainer{
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+    .minContainer1{
+        display: flex;
+        flex-direction: initial;
+        padding: 0 15px;
+        justify-content: space-between;
+    }
+
+}
+@media screen and (max-width:400px){
+    
+}

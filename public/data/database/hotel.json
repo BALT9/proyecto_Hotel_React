@@ -1,0 +1,82 @@
+{
+    "nombre": "Nombre hotel",
+    "slug": "slug",
+    "logo": "img",
+    "color_primario": "#ff0",
+    "color_secundario": "#00f",
+    "sucursal": [
+        {
+            "nombre": "Casa Matriz",
+            "ubicacion": {
+                "direccion": "av 123 zona abc",
+                "cordenadas" : {
+                    "latitud" : "",
+                    "longitud" : ""
+                }
+            }
+        },
+        {
+            "nombre": "Sucursal Prado",
+            "ubicacion": {
+                "direccion": "av 123 zona abc",
+                "cordenadas" : {
+                    "latitud" : "",
+                    "longitud" : ""
+                }
+            }
+        }
+    ],
+    "portadas": [
+        {
+            "imagen": "imagen",
+            "descripcion": "Imagen del Hotel, vista Frontal"
+        },
+        {
+            "imagen": "imagen",
+            "descripcion": "Imagen de los servicios que ofrece"
+        }
+    ],
+    "redes:" : [
+        {
+            "nombre": "Facebook",
+            "link":"abc",
+            "icono":"imagen"
+        },
+        {
+            "nombre": "whastapp",
+            "link":"abc",
+            "icono":"imagen"
+        },
+        {
+            "nombre-red": "x",
+            "link":"abc",
+            "icono":"imagen"
+        }
+    ],
+    "contactos":[
+        {
+            "nombre": "Soporte",
+            "telefono_celular": "+5917654321",
+            "correo": "soporte@empresa.com"
+        },
+        {
+            "nombre": "Area Marketing",
+            "telefono_celular": "+5917654321",
+            "correo": "soporte@empresa.com"
+        }
+    ],
+    "servicios": [
+        {
+            "nombre": "wifi",
+            "imagen":"imagen"
+        }
+    ],
+    "areas_comunes": [
+        {
+            "nombre": "wifi",
+            "imagen":"imagen"
+        }
+    ]
+    
+
+}

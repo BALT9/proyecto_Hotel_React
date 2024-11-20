@@ -2,8 +2,8 @@
     {
         "id": 1,
         "slug": "hotel-dia",
-        "nombre": "departamentos a su altura en la paz",
-        "colores": ["#1D1D1D","#FFC433"],
+        "nombre": "Departamentos a su altura en la paz",
+        "colores": ["#8C163F","#FF1F08"],
         "descripcion": "Sea bienvenido al hotel hola",
         "logo": "https://www.zarla.com/images/zarla-el-templo-1x1-2400x2400-20220106-683wpmjpp4b79j33vdp3.png?crop=1:1,smart&width=250&dpr=2",
         "portadas": ["https://i.pinimg.com/originals/a1/f7/6b/a1f76b468514db14bed76848de9be78b.jpg",
@@ -22,7 +22,8 @@
                 "tamano": "20m",
                 "camas": 2,
                 "capacidad": 2,
-                "caracteristicas": ["2 escritorios","1 mesa", "2 armarios", "2 veladores","balcon con muebles de terraza"]
+                "caracteristicas": ["2 escritorios","1 mesa", "2 armarios", "2 veladores","balcon con muebles de terraza","cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora","cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora","cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]
             },
             {
                 "slugHabitacion": "habitacion-pequena2",
@@ -34,7 +35,8 @@
                 "tamano": "20m",
                 "camas": 1,
                 "capacidad": 2,
-                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]
             },
             {
                 "slugHabitacion": "habitacion-pequena3",
@@ -46,7 +48,8 @@
                 "tamano": "10m",
                 "camas": 1,
                 "capacidad": 1,
-                "caracteristicas": ["1 escritorio","1 mesa", "armario", "velador","balcon con muebles de terraza"]
+                "caracteristicas": ["1 escritorio","1 mesa", "armario", "velador","balcon con muebles de terraza"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]
             },
             {
                 "slugHabitacion": "habitacion-pequena4",
@@ -58,7 +61,8 @@
                 "tamano": "20m",
                 "camas": 1,
                 "capacidad": 2,
-                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]
             },
             {
                 "slugHabitacion": "habitacion-pequena5",
@@ -70,12 +74,17 @@
                 "tamano": "20m",
                 "camas": 1,
                 "capacidad": 2,
-                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]
             }
 
         ],
+        "fotosServicios":[
+            "https://www.divinacocina.es/wp-content/uploads/2016/01/huevos-revueltos-desayuno-2.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjMRFXNGdd6ALDOWRJfxE5tMmVbUZgkLDOyA&s"
+        ],
         "servicios": [
-            {
+            {   
                 "servicio": "https://img.icons8.com/?size=100&id=6NTuPlcFEGmo&format=png&color=000000",
                 "desc": "desayuno"
             },
@@ -115,6 +124,20 @@
                 "servicio": "https://img.icons8.com/?size=100&id=rDmP3U8goDH2&format=png&color=000000",
                 "desc":"bar"
             }
+        ],
+        "sitio": [
+            {
+                "lugar": "https://www.piscinadecor.com/wp-content/uploads/2023/07/piscinas-fibra-barcelona.jpg",
+                "desc": "contamos con la mejor piscina"
+            },
+            {
+                "lugar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTepP6O2zfgCj-7QRjsMR8GLPO0lGVg0hpnXg&s",
+                "desc": "contamos con las mejores comidas"
+            },
+            {
+                "lugar": "https://www.infoteknico.com/wp-content/uploads/2020/10/Seguridad-en-hoteles.jpg",
+                "desc": "contamos con la mejor seguridad"
+            }
         ]
     },
 
@@ -142,7 +165,8 @@
                 "tamano": "20m",
                 "camas": 2,
                 "capacidad": 2,
-                "caracteristicas": ["2 escritorios","1 mesa", "2 armarios", "2 veladores","balcon con muebles de terraza"]
+                "caracteristicas": ["2 escritorios","1 mesa", "2 armarios", "2 veladores","balcon con muebles de terraza"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]
             },
             {
                 "slugHabitacion": "habitacion-grande-madre",
@@ -155,7 +179,8 @@
                 "tamano": "20m",
                 "camas": 1,
                 "capacidad": 2,
-                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"]
+                "caracteristicas": ["1 escritorio","1 mesa", "1 armario", "1 velador","balcon con muebles de terraza"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]
             },
             {
                 "slugHabitacion": "habitacion-preciosa-corazon-de-condesa",
@@ -166,17 +191,24 @@
                 "tamano": "10m",
                 "camas": 1,
                 "capacidad": 1,
-                "caracteristicas": ["1 escritorio","1 mesa", "armario","velador","balcon con muebles de terraza"]
+                "caracteristicas": ["1 escritorio","1 mesa", "armario","velador","balcon con muebles de terraza"],
+                "servicios": ["cocina","zona de trabajo","ascensor","wifi","televisor de alta definicion","lavadora"]   
             }
+        ],
+        "fotosServicios":[
+            "https://www.divinacocina.es/wp-content/uploads/2016/01/huevos-revueltos-desayuno-2.jpg",
+            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjMRFXNGdd6ALDOWRJfxE5tMmVbUZgkLDOyA&s"
         ],
         "servicios": [
             {
+                "foto": "https://www.divinacocina.es/wp-content/uploads/2016/01/huevos-revueltos-desayuno-2.jpg",
                 "servicio": "https://img.icons8.com/?size=100&id=6NTuPlcFEGmo&format=png&color=000000",
                 "desc": "desayuno"
             },
             {
                 "servicio": "https://img.icons8.com/?size=100&id=ymRbygTm3M1l&format=png&color=000000",
-                "desc": "calefaccion"   
+                "desc": "calefaccion",
+                "foto":"https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/media/image/2021/12/chimenea-2564801.jpg?tf=3840x"
             },
             {
                 "servicio": "https://img.icons8.com/?size=100&id=60027&format=png&color=000000",
@@ -206,6 +238,20 @@
             {
                 "servicio": "https://img.icons8.com/?size=100&id=rDmP3U8goDH2&format=png&color=000000",
                 "desc":"bar"
+            }
+        ],
+        "sitio": [
+            {
+                "lugar": "https://iopool.com/cdn/shop/articles/waterfall_5bd3a097-4ab7-462f-9297-e26027ae1afb.jpg?v=1679754078",
+                "desc": "contamos con la mejor piscina"
+            },
+            {
+                "lugar": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTepP6O2zfgCj-7QRjsMR8GLPO0lGVg0hpnXg&s",
+                "desc": "contamos con las mejores comidas"
+            },
+            {
+                "lugar": "https://www.infoteknico.com/wp-content/uploads/2020/10/Seguridad-en-hoteles.jpg",
+                "desc": "contamos con la mejor seguridad"
             }
         ]
     }

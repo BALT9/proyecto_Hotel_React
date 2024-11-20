@@ -32,7 +32,9 @@ function Nav(props) {
                 </div>
                 <div className={nav.img}>
                     <img src={props.logo} alt="" />
+                    <p>{props.nombreHotel}</p>
                 </div>
+
 
                 <div className={`${nav.links} ${nav[clase]}`} id="links">
                     <Link to={"/"} className={nav.link} onClick={menuIcono}>Inicio</Link>

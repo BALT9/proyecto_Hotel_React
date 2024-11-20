@@ -1,0 +1,12 @@
+.titulo{
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font--);
+    margin-top: 30px;
+    /* font-size: ; */
+}
+.container_ubi{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}

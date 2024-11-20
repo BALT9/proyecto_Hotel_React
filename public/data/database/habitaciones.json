@@ -1,0 +1,33 @@
+{
+    "nombre": "Habitacion simple",
+    "slug": "habitacion-pequena",
+    "imagenes": [
+        {
+            "imagen": "https://media-cdn.tripadvisor.com/media/photo-s/10/2d/39/0a/habitacion-para-2-personas.jpg",
+            "descripcion": "Imagen del Hotel, vista Frontal"
+        },
+        {
+            "imagen": "https://www.jotajotape.com/wp-content/uploads/2019/06/habitacion-juvenil-cama-complementos-flat-colgados-500x403.webp",
+            "descripcion": "Imagen del Hotel, vista Frontal"
+        }
+    ],
+    "nroHabitacion": "1",
+    "descripcion": "Habitacion simple con baño privado",
+    "mostrar_precio": false,
+    "precio": 200,
+    "tipo_moneda": "Bs",
+    "capacidad": 2,
+    "caracteristicas": [
+        "2 escritorios",
+        "1 mesa",
+        "2 armarios",
+        "2 veladores",
+        "balcon con muebles de terraza"
+    ],
+    "servicios": [
+        {
+            "nombre": "wifi",
+            "imagen":"imagen"
+        }
+    ]
+}

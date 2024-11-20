@@ -1,0 +1,95 @@
+.container{
+    position: relative;
+}
+.barra_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.barraProgreso {
+    position: relative;
+    width: 80%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin: 50px;
+    counter-reset: step;
+}
+
+.barraProgreso::before {
+    content: "";
+    height: 5px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: darkgrey; /* Color base de la barra */
+    z-index: 1;
+}
+
+.progress {
+    position: absolute;
+    top: 50%;
+    height: 5px;
+    background-color: var(--landing-secondary-color); /* Color de la barra de progreso */
+    z-index: 1;
+    transition: width 0.3s ease; /* Transición suave */
+}
+.step {
+    width: 2.1875rem;
+    height: 2.1875rem;
+    border-radius: 50%;
+    background-color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.step::before {
+    counter-increment: step;
+    content: counter(step);
+}
+
+.active {
+    background-color: var(--landing-secondary-color); /* Color de los pasos activos */
+}
+.botones{
+    display: flex;
+    justify-content: center;
+    /* padding: 10px 30px; */
+    position: fixed;
+    bottom: 0%;
+    left: 50%; /* Mueve el contenedor al centro */
+    transform: translateX(-50%); 
+    margin: 10px;
+
+
+}
+.boton{
+    margin: 0 5px;
+    padding: 15px 20px;
+    font-size: 15px;
+    background-color: orange;
+    border: none;
+    color: #fff;
+    font-family: var(--font--);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton:disabled {
+    
+    background-color: #d3d3d3; /* Color de fondo para el estado deshabilitado */
+    color: #a1a1a1;            /* Color del texto para el estado deshabilitado */
+    cursor: not-allowed;       /* Cursor para indicar que no se puede hacer clic */
+    opacity: 0.6;              /* Opacidad para un efecto visual más suave */
+    box-shadow: none;          /* Eliminar la sombra si existiera */
+  }

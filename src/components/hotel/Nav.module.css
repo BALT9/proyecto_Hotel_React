@@ -10,10 +10,17 @@
     color: #fff;
     display: none;
 }
-
+.img{
+    display: flex;
+    align-items: center;
+}
 .img img{
     width: 100px;
     height: 80px;
+}
+.img p{
+    color: #fff;
+    font-size: 18px;
 }
 .links{
     display: flex;
@@ -37,12 +44,15 @@
     background-color: var(--segundo-color);
     border: none;
     box-shadow: 0;
-    border-radius: 5px;
+    border-radius: 4px;
     padding: 20px;
     margin: 10px;
     font-size: 20px;
     color: #fff;
     cursor: pointer;
+}
+.botonReserva:hover{
+    background-color: blueviolet;
 }
 
 

@@ -1,13 +1,16 @@
-import Nav from "./Nav";
-import Portada from "./Portada";
-import Habitacion from "./Habitacion";
-import Servicio from "./Servicio";
+import Nav from "../components/hotel/Nav.jsx";
+import Portada from "../components/hotel/Portada.jsx";
+import Habitacion from "../components/hotel/Habitacion.jsx";
+import Servicio from "../components/hotel/Servicio.jsx";
+import Ubicacion from "../components/hotel/Ubicacion.jsx"
 
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import './hotel.css';
 
-import Detalle from './Detalle.jsx';
+import Explorar from "../components/hotel/Explorar.jsx";
+import Footer from "../components/hotel/Footer.jsx";
+import MapComponent from "../pruebas/Mapa.jsx";
 
 function Hotel() {
 
@@ -53,15 +56,21 @@ function Hotel() {
         <>
             {/* {dataHotel && JSON.stringify(dataHotel.color)} */}      
             {dataHotel &&
-                <>
+                <div className="contHotel">
 
-                    <Nav logo={dataHotel.logo} ></Nav>
+                    <Nav logo={dataHotel.logo} nombreHotel={dataHotel.nombre}></Nav>
                     <Portada fondo={dataHotel.portadas} nombre_hotel={dataHotel.nombre} descripcion={dataHotel.descripcion}></Portada>
                     <Habitacion habitaciones={dataHotel.habitaciones}></Habitacion>
-                    <Servicio servicios={dataHotel.servicios}></Servicio>
-                    
-                </>
-            },
+                    <Servicio servicios={dataHotel.servicios} fotosServicios={dataHotel.fotosServicios}></Servicio>
+                    <Explorar explorar={dataHotel.sitio}></Explorar>
+                    {/* <Ubicacion></Ubicacion> */}
+                    <MapComponent></MapComponent>
+                    <Footer></Footer>
+                    <div className="botonFijo"> 
+                        <i className='bx bxl-whatsapp'></i>
+                    </div>
+                </div>
+            }
         </>
     )
 }
